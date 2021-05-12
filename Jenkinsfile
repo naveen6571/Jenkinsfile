@@ -1,7 +1,8 @@
  node {
    stage('Git Clone') {
    
-		git credentialsId: 'gitlab', url: 'https://github.com/ksproapp/ks.git'
+		git 'https://github.com/naveen6571/ks.git'
+
     }
     stage('Maven Clean') {
           sh 'mvn clean'
